@@ -4,6 +4,11 @@
 <head>
   <title>Document</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" media="screen and (max-width: 768px)" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="print.css" media="print">
 </head>
 
 <body>
@@ -59,6 +64,15 @@
       <div class="card">
         <div class="image">
           <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+          <!-- 
+          <picture class="image" alt="Imagem">
+            <source media="(min-width: 768px)" srcset="https://i.ytimg.com/vi/GykTLqODQuU/maxresdefault.jpg">
+            <source media="(min-width: 320px)" srcset="https://i.ytimg.com/vi/rAzHvYnQ8DY/hqdefault.jpg">
+            <source media="(min-width: 10px)" srcset="https://i.ytimg.com/vi/HN1UjzRSdBk/mqdefault.jpg">
+              
+            <img src="https://i.ytimg.com/vi/GykTLqODQuU/hqdefault.jpg" />
+          </picture> 
+          -->
         </div>
         <div class="content">
           <p class="title text--medium">
@@ -126,6 +140,7 @@
   </div>
 
   <script src="scripts.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
